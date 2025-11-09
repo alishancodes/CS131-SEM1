@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anchor Tag Demonstration with Navigation</title>
+</head>
+<body id="top">
+
+  <header>
+    <h1>CONTENT</h1>
+  </header>
+
+  <!-- Navigation Section -->
+  <nav>
+    <p>
+      <a href="#web-link">1. Web Link</a> |<br>
+      <a href="#reference">2. Reference Within Page</a> |<br>
+      <a href="#image-link">3. Image as Hyperlink</a>
+    </p>
+  </nav>
+
+  <hr>
+
+  <!-- 1. Web link that opens in a new window -->
+  <section id="web-link">
+    <h2>1. Web link that opens in a new window</h2>
+    <p>
+      Click here to visit 
+      <a href="https://www.google.com" target="_blank">Google</a> 
+      in a new tab.
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- 2. Reference within the same HTML document -->
+  <section id="reference">
+    <h2>2. Reference within the same HTML document</h2>
+    <p>
+      Jump to the <a href="#bottom">bottom</a> of this page.
+    </p>
+
+    <p style="margin-top: 500px;">
+      <a id="bottom"></a>
+      You’ve reached the bottom of the page!
+      <br>
+      <a href="#top">Go back to top</a>
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- 3. Making an image a hyperlink to display another image -->
+  <section id="image-link">
+    <h2>3. Making an image a hyperlink to display another image</h2>
+    <p>Click the Google logo below to open another image:</p>
+
+    <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/512px-Google_2015_logo.svg.png" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Google.png/320px-Google.png"
+           alt="Google Logo" width="200">
+    </a>
+  </section>
+
+</body>
+</html>
+
