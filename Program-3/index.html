@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Frameset Example - Header, Navigation, Content</title>
+</head>
+
+<!-- The <frameset> tag replaces <body> in frame-based pages -->
+<frameset rows="20%,80%">
+  <!-- Top frame for Header -->
+  <frame src="header.html" name="headerFrame" scrolling="no" noresize>
+
+  <!-- Nested frameset for Navigation (left) and Content (right) -->
+  <frameset cols="25%,75%">
+    <frame src="navigation.html" name="navFrame">
+    <frame src="content.html" name="contentFrame">
+  </frameset>
+
+</frameset>
+
+<!-- Fallback for browsers that don't support frames -->
+<noframes>
+  <body>
+    <p>Your browser does not support frames.</p>
+  </body>
+</noframes>
+</html>
