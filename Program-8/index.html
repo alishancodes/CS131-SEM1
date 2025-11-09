@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Table, Menu, and Gallery Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: white;
+    }
+
+    /* 1️⃣ MENU DESIGN */
+    .menu {
+      background-color: black;
+      overflow: hidden;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+    .menu a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+    .menu a:hover {
+      background-color: gray;
+    }
+
+    /* 2️⃣ TABLE PROPERTIES */
+    table {
+      width: 50%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: lightgray;
+    }
+    tr:nth-child(even) {
+      background-color: whitesmoke;
+    }
+    tr:nth-child(odd) {
+      background-color: white;
+    }
+
+    /* 3️⃣ IMAGE GALLERY */
+    .gallery {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .gallery img {
+      width: 150px;
+      height: 100px;
+      border: 2px solid black;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Properties Demonstration</h2>
+
+  <!-- 1️⃣ MENU DESIGN -->
+  <h3>Simple Menu:</h3>
+  <div class="menu">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- 2️⃣ TABLE PROPERTIES -->
+  <h3>Styled Table:</h3>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Course</th>
+      <th>Marks</th>
+    </tr>
+    <tr>
+      <td>Ali</td>
+      <td>HTML</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>Sara</td>
+      <td>CSS</td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>JavaScript</td>
+      <td>88</td>
+    </tr>
+  </table>
+
+  <!-- 3️⃣ IMAGE GALLERY -->
+  <h3>Cat Image Gallery 🐱:</h3>
+  <div class="gallery">
+    <img src="https://as2.ftcdn.net/v2/jpg/02/64/15/41/1000_F_264154131_XvpBI5fARjB7Qlo4PMrMMTaunXha47NR.jpg" alt="Cat 1">
+    <img src="https://as1.ftcdn.net/v2/jpg/02/20/75/74/1000_F_220757428_lMzj1gZ7RkomNqUDQrPBbH4baALlx56Y.jpg" alt="Cat 2">
+    <img src="https://as2.ftcdn.net/v2/jpg/02/20/75/73/1000_F_220757363_OTpzmO9QUrRdxwDxPXEmXaoSEtjj6hHL.jpg" alt="Cat 3">
+    <img src="https://as1.ftcdn.net/v2/jpg/02/27/76/44/1000_F_227764486_nAcFB4FnDTiyk0WLgKBXArOsqaUCuk7X.jpg" alt="Cat 4">
+    <img src="https://as1.ftcdn.net/v2/jpg/01/41/76/08/1000_F_141760845_8jGGCqprLRNEM7kf4J3fyqIyZn2ot1Hr.jpg" alt="Cat 5">
+  </div>
+
+</body>
+</html>
