@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Properties Demo</title>
+  <style>
+    /* 1️⃣ CSS List Properties */
+    ul {
+      list-style-type: square;          /* use square bullets */
+      background-color: #f9f9f9;        /* light background */
+      border: 1px solid gray;           /* border around list */
+      padding: 15px;                    /* space inside box */
+      width: fit-content;               /* shrink to content */
+    }
+
+    li {
+      color: darkblue;
+      font-family: Arial, sans-serif;
+      margin: 5px 0;                    /* space between items */
+    }
+
+    /* 2️⃣ Border Property */
+    .border-box {
+      border: 2px solid black;
+      padding: 10px;
+      width: fit-content;
+      margin-top: 15px;
+    }
+
+    /* 3️⃣ Position: static */
+    .static-box {
+      position: static;
+      background-color: lightyellow;
+      border: 1px solid black;
+      padding: 5px;
+      margin-top: 10px;
+    }
+
+    /* 4️⃣ Position: absolute */
+    .absolute-box {
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      background-color: lightcoral;
+      border: 1px solid black;
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS Properties Demonstration</h2>
+
+  <!-- 1️⃣ List Properties -->
+  <h3>List Example:</h3>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+
+  <!-- 2️⃣ Border Property -->
+  <div class="border-box">This box uses a <b>border</b>.</div>
+
+  <!-- 3️⃣ Static Position -->
+  <div class="static-box">This box is <b>static</b> (default position).</div>
+
+  <!-- 4️⃣ Absolute Position -->
+  <div class="absolute-box">This box is <b>absolutely</b> positioned.</div>
+</body>
+</html>
+<!-- This HTML document demonstrates various CSS properties including list styles, borders, and positioning. -->
